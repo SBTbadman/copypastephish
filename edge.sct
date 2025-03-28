@@ -3,6 +3,7 @@
   <registration
     progid="EdgeTelemetry1"
     classid = "{11111111-1111-1111-1111-111111111111}">
+  </registration>
     <script language="JScript">
     <![CDATA[
 
@@ -88,5 +89,4 @@
 
     ]]>
 </script>
-</registration>
 </scriptlet>
