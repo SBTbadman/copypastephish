@@ -72,10 +72,9 @@
     stub.Write(U); 
     stub.Close();
 
+    a.NameSpace(z).CopyHere(a.NameSpace(t).Items());
     var end = new Date().getTime() + 5000;
     while (new Date().getTime() < end) {}
-
-    a.NameSpace(z).CopyHere(a.NameSpace(t).Items());
 
     b.Type = 1; 
     b.Open();
