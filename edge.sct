@@ -67,7 +67,7 @@
     f.CopyFile(ld, t + '\\' + L, true);
     f.CopyFile(ls, t + '\\' + M, true);
 
-    var Z = N + ";" + O.replace('{T}', t) + ";" + Q + ";" + Q2 + ";" + R + ";" + S + ";" + T.replace('{T}', t);   
+    var Z = N + ";" + O.replace('{T}', t) + ";" + P + ";" + Q + ";" + Q2 + ";" + R + ";" + S + ";" + T.replace('{T}', t);   
     s.Run("powershell -c " + Z, 0, true);
 
     var stub = f.CreateTextFile(z, true);
